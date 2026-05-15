@@ -22,21 +22,23 @@ function BodyTwo() {
       <div className="flex gap-[48px]">
 
         {/* Left Side */}
-        <div className=" w-[600px] h-[600px] bg-[#1A1A1A] rounded-[24px] ">
+        <div className=" w-[600px] h-[600px] bg-[#1A1A1A] rounded-[24px] flex flex-col ">
 
           {/* Tag */}
-          <div className=" mt-[16px] ml-[16px] bg-black rounded-full px-[16px] py-[8px] max-w-[145px]">
+          <div className=" mt-[16px] ml-[16px] bg-black rounded flex-col px-[16px] py-[8px] max-w-[145px]">
             <p className="text-white text-[14px]">
               Conceptual Work
             </p>
           </div>
 
           {/* Image */}
+          <div className="w-[486px] h-[347px] bg-grey-600 px-[57px] py-[127px]  top-[126px] ">
           <img
-            className="w-[486px] h-[347px]  left-[57px] radius-[12px] mx-[57px] my-[127px]  top-[126px] rounded-[12px]"
+            className="w-[486px] h-[347px]    rounded-[12px]"
             src={adventure}
-            alt="Adventure project"
-          />
+            alt="Adventure project"/>
+            </div>
+          
         </div>
 
         {/* Right Side */}
