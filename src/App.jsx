@@ -6,13 +6,17 @@ import BodyTwo from "./components/BodyTwo"
 function App() {
 
 
-return (
-  <div>
-    <Header name="Robert Garcia" />
-    <BodyOne/>
-    
-    <BodyTwo/>
-  </div>
+  return ( <> 
+              <Header name="Robert Garcia" />
+            <div className="px-[108px] "> 
+            
+            
+              <BodyOne/>
+              
+              <BodyTwo/>
+              </div>
+
+          </>
 )
 }
 export default App

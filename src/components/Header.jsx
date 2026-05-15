@@ -1,27 +1,20 @@
 function Header(props) {
     return(
-        <div class="flex justify-between 
-         pt-[24px] pr-[60px] pb-[24px]  pl-[24px] 
-           bottom-[-1px]  hug-[96px]
-            text-white
-          " >
+       <div className="h-[96px] flex w-full top-[24px] right-[60px] bottom-[24px] left-[60px] border-b-[1px] text-white justify-between  items-center p-15">
 
+            <div className="uppercase  leading-[150%] text-[32px] left-[1234px] right-[60px] top-[24px] ">
+                <h1>robert garcia</h1>
+            </div>
 
-        <   div className="text-[32px] h-[148px]
-            font-[Bebas Neue] weight-[400px]
-            leading-normal tracking-[-1%]
-           
-        
-        ">{props.name}</div>
-              
-              
-            <div className="flex flex-row w-[207px] h-[24px] gap-[32px] "> 
+            <div className="h-[24px] w-[207px]   flex gap-[32px] right-[60px] top-[36px] left-[1173px] items-center ">
                 <span>Work</span>
                 <span>About</span>
                 <span>Contact</span>
             </div>
 
-        </div>
+        
+
+       </div>
     );
 }
 

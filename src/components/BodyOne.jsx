@@ -1,79 +1,43 @@
+import React from "react";
+import profileImg from "../assets/huma.png";
+import linkedin from "../assets/linkdIn.png";
+import github from "../assets/github.png";
+
 function BodyOne(){
     return(
-            <div> 
-        <div className="   text-white flex  
-                             w-[544px] h-[360px]
-                             absolute top-[286px] left-[108px] 
-                            pb-[22px] gap-[40px]
-        
-        ">
-            <div className="flex flex-col w-[544px] h-[244px] gap-[8px]">
-             <h1 className="
-                        font-bebas
-                        text-[101px]
-                        leading-[90%]
-                        tracking-[0px]
-                        ">
-                        HI, I AM 
-                        ROBERT GARCIA.
-             </h1>
-                 <p className="w-[544px] mt-4 text-[18px] leading-[150%] text-gray-300">
-      A Sydney based front-end developer passionate about building
-      accessible and user friendly websites.
-    </p>
-            
-            <div className="flex items-center gap-6">
+        <div className=" h-[700px] w-[full] items-center flex gap-[80px] ">
 
-        {/* BUTTON */}
-        <button
-            className="
-            flex items-center gap-3
-            w-[187px] h-[54px]
-            px-6
-            bg-[#D3E97A]
-            text-black
-            rounded-full
-            font-semibold
-            "
-        >
-            CONTACT ME
+            <div className="  h-[360px] w-[544px] top-[286px] left-[108px] gap-[40px] pb-[22px] ">
+                <div className="uppercase text-white text-[62px] weight-[20px]">
+                    <h1>hi, i am </h1>
+                    <h1> robert garcia.</h1>
+                </div>
 
-            <img
-            className="w-[20px] h-[20px]"
-            src="./src/assets/dot.png"
-            alt="dot"
-            />
-        </button>
+                <p className="w-[544px] h-[54px text-[18px] text-[#C7C7C7]">
+                      A Sydney based front-end developer passionate about building accessible and user friendly websites.</p>
 
-        
-        <div className="flex items-center gap-4">
+                <div className=" flex items-center gap-[16px] mt-[40px] h-[54px] ">
+                     <button className="uppercase w-[187px] h-[54px] flex items-center justify-between px-[24px] bg-[#D3E97A] font-bold text-[16px] rounded-[100px]">
+                      Contact Me
+                    <div className="w-[10px] h-[10px] rounded-full bg-black" />
+                    </button>
+                     <img src={linkedin} alt="" className="w-[54px] h-[54px]" />
+                    <img src={github} alt="" className="w-[54px] h-[54px]" />
 
-            <img
-            className="w-[26px] h-[26px]"
-            src="./src/assets/github.png"
-            alt="github"
-            />
+                </div>
 
-            <img
-            className="w-[26px] h-[26px]"
-            src="./src/assets/linkdIn.png"
-            alt="linkedin"
-            />
-
-     </div>
-
-    </div>
             </div>
 
-        </div>
+            <div className=" h-[663px] w-[600px] top-[126px] left-[700px] bg-[#C7C7C7] rounded-2xl ">
 
-        <div className="w-[600px] h-[700px] 
-        top-[126px] left-[732px] absolute pr-[180px]">
-            <img src="./src/assets/huma.png" alt="Human" />
-        </div>
+                <div className="top-[163px] ">
+                   <img src={profileImg} alt="" />
+                </div>
+              
+            </div>
+           
 
-            
- </div>
+        </div>
 
     
     );
