@@ -155,8 +155,8 @@ function BodyTwo() {
 
          <div className="w-[574px] h-[480px]  mt-[60px]  flex flex-col gap-[32px] ">
 
-            <h1 className="w-[576px] h-[90px] text-[32px] text-white  "> Promotional landing page for our  favorite show</h1>
-            <p  className="w-[576px] h-[90px] text-[18px] leading-[150%] text-[#C7C7C7]">Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.</p>
+            <h1 className="w-[576px] h-[90px] text-[32px] text-white  ">E-commerce product page </h1>
+            <p  className="w-[576px] h-[90px] text-[18px] leading-[150%] text-[#C7C7C7]">Successfully crafted an engaging product page featuring a dynamic lightbox gallery and seamless cart functionality, showcasing proficiency in JavaScript development.</p>
             {/* border    */}
             <div className="h-[156px] w-[576px]   flex flex-col text-[#C7C7C7] " > 
                <p className="uppercase text-[16px] leading-[150%] pb-[16px] border-b border-[#484848] ">Project Info</p>
