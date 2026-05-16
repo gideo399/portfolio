@@ -1,27 +1,90 @@
-function Footer (){
+import github from "../assets/github.png";
+import linkedin from "../assets/linkdIn.png";
+
+function Footer() {
 
     return(
-            <div className="flex  text-white gap-[213px] mx-[48px] ">
+        <div className="top-[4159px] left-[108px] h-[771px] flex pt-[80px]  gap-[24px] text-white">
 
-                <div className="flex border-2 border-red h-[91px] w-[307px] top-[3446px] left-[108px] ">
-                    <h1 className="text-[65px] uppercase leading-[90%]  mt-[120px] mr-[1025px] ">About Me </h1>
-                </div>
+  {/* Left Section */}
+  <div className="flex h-[611px] w-[600px] flex-col gap-[40px]">
+    <h1 className="uppercase h-[76px] w-[600px] text-[46px] leading-[100%]">Let's connect</h1>
 
-                <div className="w-[704px] h-[241px]  top-[3446px]  flex flex-col gap-[48px] right-[628px]   ">
+    <div>
+      <p className="text-[18px]">Say hello at robertgarcia@gmail.com</p>
+      <p className="text-[18px]">For more information, here is my resume</p>
+    </div>
 
-                    <h1 className="w-[576px] h-[90px] text-[27px] text-white ">I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h1>
+    <div className="w-[200px] h-[32px] flex gap-[24px]">
+      <img className="w-[32px] h-[32px]" src={github} alt="GitHub" />
+      <img className="w-[32px] h-[32px]" src={linkedin} alt="LinkedIn" />
+    </div>
 
-                    <p className="[576px] h-[90px] text-[15px] leading-[150%] text-[#C7C7C7]">I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I'm exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.</p>
+    <div className="mt-auto text-[16px] leading-[160%]">
+      <p>© 2023 Robert Garcia</p>
+    </div>
+  </div>
 
-                </div>
+  {/* Right Section - Form */}
+  <form className="flex flex-col w-[600px] h-[611px] gap-[24px] pl-[108px]">
 
-            </div>
+    {/* Name */}
+    <div className="flex flex-col gap-[8px]">
+      <label htmlFor="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="John Doe"
+        className="h-[51px] rounded-[4px] w-[600px] bg-[#1A1A1A] py-[12px] px-[16px] text-white"
+      />
+    </div>
 
-        
+    {/* Email */}
+    <div className="flex flex-col gap-[8px]">
+      <label htmlFor="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="example@email.com"
+        className="h-[51px] rounded-[4px] w-[600px] bg-[#1A1A1A] py-[12px] px-[16px] text-white"
+      />
+    </div>
+
+    {/* Subject */}
+    <div className="flex flex-col gap-[8px]">
+      <label htmlFor="subject">Subject</label>
+      <input
+        id="subject"
+        type="text"
+        placeholder="Your subject here"
+        className="h-[51px] rounded-[4px] w-[600px] bg-[#1A1A1A] py-[12px] px-[16px] text-white"
+      />
+    </div>
+
+    {/* Message */}
+    <div className="flex flex-col gap-[8px]">
+      <label htmlFor="message">Message</label>
+      <textarea
+        id="message"
+        placeholder="Write your message..."
+        className="h-[156px] rounded-[4px] w-[600px] bg-[#1A1A1A] py-[12px] px-[16px] text-white resize-none"
+      />
+    </div>
+
+    {/* Submit Button */}
+    <button
+      type="submit"
+      className="w-[140px] h-[54px] rounded-[100px] bg-[#D3E97A] text-black font-bold"
+    >
+      SUBMIT
+    </button>
+  </form>
+</div>
+
+
+
 
 
     );
 }
-export default Footer;
-
-
+export default  Footer ;
