@@ -5,208 +5,190 @@ import newspaper from "../assets/newspaper.png";
 
 function BodyTwo() {
   return (
-    <div className="flex flex-col w-full   pt-[80px]  gap-[80px] ">
+    <div className="flex flex-col  md:px-[80px] gap-[64px] md:gap-[80px] ">
 
       {/* Heading Section */}
-      <div className="flex flex-col gap-[8px] text-white">
-        <p className="text-[40px] font-bold">
+      <div className="flex flex-col  gap-3 md:gap-4 text-white">
+        <p className="text-2xl md:text-3xl lg:text-[40px] font-bold">
           FEATURED PROJECTS
         </p>
-
-        <p className="text-[18px] max-w-[600px]">
+        <p className="text-sm md:text-base lg:text-[18px] max-w-full md:max-w-xl lg:max-w-[600px] text-[#C7C7C7]">
           Here are some of the selected projects that showcase my passion for front-end development.
         </p>
       </div>
 
-      {/* Project Card */}
-      <div className="flex gap-[48px]">
-
-        {/* Left Side */}
-        <div className=" w-[600px] h-[600px] bg-[#1A1A1A] rounded-[24px] flex flex-col ">
-
-          {/* Tag */}
-          <div className=" mt-[16px] ml-[16px] bg-black rounded flex-col px-[16px] py-[8px] max-w-[145px]">
-            <p className="text-white text-[14px]">
+     {/* card 1 */} 
+      <div className=" h-[343px] md:h-[600px] flex flex-col md:flex-row gap-[40px] md:gap-[48px] border-b-1 "> 
+        <div className="w-[343px] h-[343px] md:w-[600px] md:h-[600px] bg-[#1A1A1A] ">
+            <div className="text-white text-xs md:text-[14px] h-[37px] w-[145px] bg-[#1A1A1A] rounded-[100px] px-[16px] py-[8px] ">
               Conceptual Work
-            </p>
+            </div>
+           
+            <div className="flex justify-center top-[128px]"> 
+             <img src={adventure}  className="w-[486px] h-[347px]   md:my-[128px] md:mx-[57px] rounded-[12px] object-cover   " alt="" />
+          
+         
+          </div>
+        </div>
+
+         {/* Right Side - Content */}
+        <div className=" md:w-[600px] flex flex-col justify-center gap-4 md:gap-6 ">
+          <h1 className="text-2xl md:text-3xl  text-white leading-snug">
+            Promotional landing page for our favorite show
+          </h1>
+          <p className="text-sm md:text-base  leading-relaxed text-[#C7C7C7]">
+            Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.
+          </p>
+          
+          {/* Project Info */}
+          <div className="flex flex-col gap-4 text-xs md:text-sm text-[#C7C7C7] border-t border-[#484848] pt-4">
+            <p className="uppercase font-semibold">Project Info</p>
+            <div className="flex justify-between border-b border-[#484848] pb-3">
+              <span>Year</span>
+              <span>2025</span>
+            </div>
+            <div className="flex justify-between pb-3">
+              <span>Role</span>
+              <span>Frontend Developer</span>
+            </div>
           </div>
 
-          {/* Image */}
-          <div className="w-[486px] h-[347px] bg-grey-600 px-[57px] py-[127px]  top-[126px] ">
-          <img
-            className="w-[486px] h-[347px]    rounded-[12px]"
-            src={adventure}
-            alt="Adventure project"/>
-            </div>
-          
+          {/* Links */}
+          <div className="flex flex-col sm:flex-row gap-4 text-[#D3E97A] text-sm md:text-base">
+            <a href="#" className="flex items-center gap-2 border-b border-[#D3E97A] pb-1 hover:opacity-80 transition">
+              LIVE DEMO
+            </a>
+            <a href="#" className="flex items-center gap-2 border-b border-[#D3E97A] pb-1 hover:opacity-80 transition">
+              SEE ON GITHUB
+              <img src={github} alt="GitHub" className="w-4 md:w-5 h-4 md:h-5" />
+            </a>
+          </div>
         </div>
 
-        {/* Right Side */}
-        <div className="w-[600px] h-[600px]  rounded-[24px]  ">
 
-         <div className="w-[574px] h-[480px]  mt-[60px]  flex flex-col gap-[32px] ">
 
-            <h1 className="w-[576px] h-[90px] text-[32px] text-white  "> Promotional landing page for our  favorite show</h1>
-            <p  className="w-[576px] h-[90px] text-[18px] leading-[150%] text-[#C7C7C7]">Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.</p>
-            {/* border    */}
-            <div className="h-[156px] w-[576px]   flex flex-col text-[#C7C7C7] " > 
-               <p className="uppercase text-[16px] leading-[150%] pb-[16px] border-b border-[#484848] ">Project Info</p>
-               <div className=" flex justify-between  w-[576px] h-[58px] top-[1px] pt-[16px] pb-[#484848] border-b border-[#484848]   " > 
-                  <span>Year</span>
-                  <span>2025</span>
-               </div> 
-               <div className="flex justify-between  w-[576px] h-[58px] top-[1px] pt-[16px] pb-[16px] border-b border-[#484848]  ">
-                  <span>Role</span>
-                  <span>Frontend Developer</span>
-               </div>
-            </div>
 
-             <div className="flex  gap-[24px]  ">
-              <div className="flex text-[#D3E97A] border-b border-[#D3E97A] "> <p>LIVE DEMO <img src="" alt="" /></p>  <img src="" alt="" /> </div>
-
-              <div className="flex text-[#D3E97A] border-b border-[#D3E97A] "><p>SEE ON GITHUB</p>  <img className="h-[21.6px] w-[21.6px] " src= {github} alt="" /></div>
-               
-
-             </div>
-
-         </div>
-         
-          
-        </div>
 
       </div>
-       {/* the second bar of the site  */}
-       <div className="flex gap-[48px]">
 
-        {/* Left Side */}
-        <div className=" w-[600px] h-[600px] bg-[#1A1A1A] rounded-[24px] p-[24px]">
-
-          {/* Tag */}
-         
-
-          {/* Image */}
+      {/* Project Card 2 */}
+      <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-[48px]">
+        {/* Left Side - Image */}
+        <div className="w-full lg:w-[600px] h-64 sm:h-96 md:h-[500px] lg:h-[600px] bg-[#1A1A1A] rounded-[24px] flex items-center justify-center flex-shrink-0 p-4 md:p-6">
           <img
-            className="w-[486px] h-[347px] mt-[126px] pl-[57px] pr-[57px]  mb-[127px] rounded-[12px]"
+            className="w-full h-full object-cover rounded-[12px]"
             src={newspaper}
             alt="newspaper"
           />
         </div>
 
-        {/* Right Side */}
-        <div className="w-[600px] h-[600px]  rounded-[24px]  ">
-
-         <div className="w-[574px] h-[480px]  mt-[60px]  flex flex-col gap-[32px] ">
-
-            <h1 className="w-[576px] h-[90px] text-[32px] text-white  "> Promotional landing page for our  favorite show</h1>
-            <p  className="w-[576px] h-[90px] text-[18px] leading-[150%] text-[#C7C7C7]">Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.</p>
-            {/* border    */}
-            <div className="h-[156px] w-[576px]   flex flex-col text-[#C7C7C7] " > 
-               <p className="uppercase text-[16px] leading-[150%] pb-[16px] border-b border-[#484848] ">Project Info</p>
-               <div className=" flex justify-between  w-[576px] h-[58px] top-[1px] pt-[16px] pb-[#484848] border-b border-[#484848]   " > 
-                  <span>Year</span>
-                  <span>2025</span>
-               </div> 
-               <div className="flex justify-between  w-[576px] h-[58px] top-[1px] pt-[16px] pb-[16px] border-b border-[#484848]  ">
-                  <span>Role</span>
-                  <span>Frontend Developer</span>
-               </div>
-            </div>
-
-             <div className="flex  gap-[24px]  ">
-              <div className="flex text-[#D3E97A] border-b border-[#D3E97A] "> <p>LIVE DEMO <img src="" alt="" /></p>  <img src="" alt="" /> </div>
-
-              <div className="flex text-[#D3E97A] border-b border-[#D3E97A] "><p>SEE ON GITHUB</p>  <img className="h-[21.6px] w-[21.6px] " src= {github} alt="" /></div>
-               
-
-             </div>
-
-         </div>
-
-
-         
-         
+        {/* Right Side - Content */}
+        <div className="w-full lg:w-[600px] flex flex-col justify-center gap-4 md:gap-6 lg:gap-[32px]">
+          <h1 className="text-2xl md:text-3xl lg:text-[32px] text-white leading-snug">
+            Promotional landing page for our favorite show
+          </h1>
+          <p className="text-sm md:text-base lg:text-[18px] leading-relaxed text-[#C7C7C7]">
+            Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.
+          </p>
           
-        </div>
-
-      </div>
-
-       <div className="flex gap-[48px]">
-
-        {/* Left Side */}
-        <div className=" w-[600px] h-[600px] bg-[#1A1A1A] rounded-[24px] p-[24px]">
-
-          {/* Tag */}
-          <div className=" mt-[16px] ml-[16px] bg-black rounded-full px-[16px] py-[8px] max-w-[145px]">
-            <p className="text-white text-[14px]">
-              challenge
-            </p>
+          {/* Project Info */}
+          <div className="flex flex-col gap-4 text-xs md:text-sm lg:text-[16px] text-[#C7C7C7] border-t border-[#484848] pt-4">
+            <p className="uppercase font-semibold">Project Info</p>
+            <div className="flex justify-between border-b border-[#484848] pb-3">
+              <span>Year</span>
+              <span>2025</span>
+            </div>
+            <div className="flex justify-between pb-3">
+              <span>Role</span>
+              <span>Frontend Developer</span>
+            </div>
           </div>
 
-          {/* Image */}
-          <img
-            className="w-[486px] h-[347px] mt-[126px] pl-[57px] pr-[57px]  mb-[127px] rounded-[12px]"
-            src={sneaker}
-            alt="Adventure project"
-          />
+          {/* Links */}
+          <div className="flex flex-col sm:flex-row gap-4 text-[#D3E97A] text-sm md:text-base">
+            <a href="#" className="flex items-center gap-2 border-b border-[#D3E97A] pb-1 hover:opacity-80 transition">
+              LIVE DEMO
+            </a>
+            <a href="#" className="flex items-center gap-2 border-b border-[#D3E97A] pb-1 hover:opacity-80 transition">
+              SEE ON GITHUB
+              <img src={github} alt="GitHub" className="w-4 md:w-5 h-4 md:h-5" />
+            </a>
+          </div>
         </div>
-
-        {/* Right Side */}
-        <div className="w-[600px] h-[600px]  rounded-[24px]  ">
-
-         <div className="w-[574px] h-[480px]  mt-[60px]  flex flex-col gap-[32px] ">
-
-            <h1 className="w-[576px] h-[90px] text-[32px] text-white  ">E-commerce product page </h1>
-            <p  className="w-[576px] h-[90px] text-[18px] leading-[150%] text-[#C7C7C7]">Successfully crafted an engaging product page featuring a dynamic lightbox gallery and seamless cart functionality, showcasing proficiency in JavaScript development.</p>
-            {/* border    */}
-            <div className="h-[156px] w-[576px]   flex flex-col text-[#C7C7C7] " > 
-               <p className="uppercase text-[16px] leading-[150%] pb-[16px] border-b border-[#484848] ">Project Info</p>
-               <div className=" flex justify-between  w-[576px] h-[58px] top-[1px] pt-[16px] pb-[#484848] border-b border-[#484848]   " > 
-                  <span>Year</span>
-                  <span>2025</span>
-               </div> 
-               <div className="flex justify-between  w-[576px] h-[58px] top-[1px] pt-[16px] pb-[16px] border-b border-[#484848]  ">
-                  <span>Role</span>
-                  <span>Frontend Developer</span>
-               </div>
-            </div>
-
-             <div className="flex  gap-[24px]  ">
-              <div className="flex text-[#D3E97A] border-b border-[#D3E97A] "> <p>LIVE DEMO <img src="" alt="" /></p>  <img src="" alt="" /> </div>
-
-              <div className="flex text-[#D3E97A] border-b border-[#D3E97A] "><p>SEE ON GITHUB</p>  <img className="h-[21.6px] w-[21.6px] " src= {github} alt="" /></div>
-               
-
-             </div>
-
-         </div>
-         
-          
-        </div>
-
       </div>
-      {/* footer  */}
-          <div className="flex  text-white gap-[213px]  ">
 
-                <div className="flex  h-[91px] w-[307px] top-[3446px] left-[108px] items-center">
-                    <h1 className="text-[50px] uppercase leading-[90%]   ">About Me </h1>
-                </div>
+      {/* Project Card 3 */}
+      <div className="flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-[48px]">
+        {/* Left Side - Image */}
+        <div className="w-full lg:w-[600px] h-64 sm:h-96 md:h-[500px] lg:h-[600px] bg-[#1A1A1A] rounded-[24px] flex flex-col flex-shrink-0">
+          <div className="mt-4 ml-4 bg-black rounded-full px-3 md:px-4 py-2 w-fit">
+            <p className="text-white text-xs md:text-[14px]">
+              Challenge
+            </p>
+          </div>
+          <div className="flex-1 flex items-center justify-center p-4 md:p-6">
+            <img
+              className="w-full h-full object-cover rounded-[12px]"
+              src={sneaker}
+              alt="Adventure project"
+            />
+          </div>
+        </div>
 
-                <div className="w-[704px] h-[241px]  top-[3446px]  flex flex-col gap-[48px] right-[628px]   ">
-
-                    <h1 className="w-[576px] h-[90px] text-[27px] text-white ">I am a front-end developer based in Sydney. Has Mechanical Engineering background. </h1>
-
-                    <p className="[576px] h-[90px] text-[15px] leading-[150%] text-[#C7C7C7]">I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I'm exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.</p>
-
-                </div>
-
+        {/* Right Side - Content */}
+        <div className="w-full lg:w-[600px] flex flex-col justify-center gap-4 md:gap-6 lg:gap-[32px]">
+          <h1 className="text-2xl md:text-3xl lg:text-[32px] text-white leading-snug">
+            E-commerce product page
+          </h1>
+          <p className="text-sm md:text-base lg:text-[18px] leading-relaxed text-[#C7C7C7]">
+            Successfully crafted an engaging product page featuring a dynamic lightbox gallery and seamless cart functionality, showcasing proficiency in JavaScript development.
+          </p>
+          
+          {/* Project Info */}
+          <div className="flex flex-col gap-4 text-xs md:text-sm lg:text-[16px] text-[#C7C7C7] border-t border-[#484848] pt-4">
+            <p className="uppercase font-semibold">Project Info</p>
+            <div className="flex justify-between border-b border-[#484848] pb-3">
+              <span>Year</span>
+              <span>2025</span>
             </div>
-       
+            <div className="flex justify-between pb-3">
+              <span>Role</span>
+              <span>Frontend Developer</span>
+            </div>
+          </div>
 
+          {/* Links */}
+          <div className="flex flex-col sm:flex-row gap-4 text-[#D3E97A] text-sm md:text-base">
+            <a href="#" className="flex items-center gap-2 border-b border-[#D3E97A] pb-1 hover:opacity-80 transition">
+              LIVE DEMO
+            </a>
+            <a href="#" className="flex items-center gap-2 border-b border-[#D3E97A] pb-1 hover:opacity-80 transition">
+              SEE ON GITHUB
+              <img src={github} alt="GitHub" className="w-4 md:w-5 h-4 md:h-5" />
+            </a>
+          </div>
+        </div>
+      </div>
 
-  </div>
+      {/* About Me Section */}
+      <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-[80px] text-white py-8 md:py-12 lg:py-8 border-t border-[#484848]">
+        <div className="w-full lg:w-auto">
+          <h1 className="text-4xl md:text-5xl lg:text-[50px] uppercase leading-tight font-bold">About Me</h1>
+        </div>
+
+        <div className="flex flex-col gap-6 md:gap-8 lg:gap-[48px] flex-1">
+          <h2 className="text-xl md:text-2xl lg:text-[27px] text-white leading-relaxed">
+            I am a front-end developer based in Sydney. Has Mechanical Engineering background.
+          </h2>
+
+          <p className="text-sm md:text-base lg:text-[15px] leading-relaxed text-[#C7C7C7]">
+            I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when developing. Passionate and curious about solving problems. Currently, I'm exploring Reactjs, Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography and playing Valorant. Learning more to improve skill.
+          </p>
+        </div>
+      </div>
+
+    </div>
   );
 }
 
 export default BodyTwo;
-
-/* Vector */

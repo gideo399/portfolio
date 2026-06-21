@@ -1,45 +1,47 @@
-import React from "react";
 import profileImg from "../assets/huma.png";
 import linkedin from "../assets/linkdIn.png";
 import github from "../assets/github.png";
 
 function BodyOne(){
     return(
-        <div className=" h-[700px] w-[full] items-center flex gap-[80px] ">
+        <div className="w-full py-8 md:py-16 ">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 gap-[32px]">
 
-            <div className="  h-[360px] w-[544px] top-[286px] left-[108px] gap-[40px] pb-[22px] ">
-                <div className="uppercase text-white text-[62px] weight-[20px]">
-                    <h1>hi, i am </h1>
-                    <h1> robert garcia.</h1>
+                {/* Text Section */}
+                <div className="md:w-full  mt-[40px]  flex  flex-col gap- md:gap-8">
+                    <div className=" gap-[12px] font-anton text-white  text-[47px] leading-tight ">
+                        <h1>HI, I AM </h1>
+                        <h1>ROERT GARCIA.</h1>
+                    
+
+                    <div className="w-full text-sm md:text-base lg:text-[18px] text-[#C7C7C7] leading-relaxed">
+                        A Sydney based front-end developer passionate about building accessible and user friendly websites.
+                    </div>
+                    </div>
+
+                    <div className="flex flex-row gap-[16px] mt-[32px] ">
+                       <button className="w-[163px] md:w-[180px] h-[48px] uppercase px-6 flex items-center justify-between bg-[#D3E97A] font-bold text-[14px] md:text-[16px] rounded-full">
+                        <span>Contact Me</span>
+                            <div className="w-5 h-5 md:w-3 md:h-3 rounded-full bg-black"></div>
+                        </button>
+                     
+                        <div className="flex gap-4">
+                            <img src={linkedin} alt="LinkedIn" className="w-12 md:w-14 lg:w-[54px] h-12 md:h-14 lg:h-[54px] cursor-pointer hover:opacity-80 transition" />
+                            <img src={github} alt="GitHub" className="w-12 md:w-14 lg:w-[54px] h-12 md:h-14 lg:h-[54px] cursor-pointer hover:opacity-80 transition" />
+                        </div>
+                    </div>
+
                 </div>
 
-                <p className="w-[544px] h-[54px text-[18px] text-[#C7C7C7]">
-                      A Sydney based front-end developer passionate about building accessible and user friendly websites.</p>
-
-                <div className=" flex items-center gap-[16px] mt-[40px] h-[54px] ">
-                     <button className="uppercase w-[187px] h-[54px] flex items-center justify-between px-[24px] bg-[#D3E97A] font-bold text-[16px] rounded-[100px]">
-                      Contact Me
-                    <div className="w-[10px] h-[10px] rounded-full bg-black" />
-                    </button>
-                     <img src={linkedin} alt="" className="w-[54px] h-[54px]" />
-                    <img src={github} alt="" className="w-[54px] h-[54px]" />
-
+                {/* Image Section */}
+                <div className="w-[343px]  h-[378.86px]  md:w-[600px] md:h-[700px] ">
+                    <div className=" bg-[#C7C7C7] rounded-2xl overflow-hidden">
+                        <img src={profileImg} alt="Profile"  className="w-[343px]  h-[378.86px]  md:w-[600px] md:h-[603px]" />
+                    </div>
                 </div>
 
             </div>
-
-            <div className=" h-[663px] w-[600px] top-[126px] left-[700px] bg-[#C7C7C7] rounded-2xl ">
-
-                <div className="top-[163px] ">
-                   <img src={profileImg} alt="" />
-                </div>
-              
-            </div>
-           
-
         </div>
-
-    
     );
 }
 
