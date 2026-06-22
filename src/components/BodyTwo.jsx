@@ -33,6 +33,8 @@ function BodyTwo() {
 
          {/* Right Side - Content */}
         <div className=" md:w-[600px] flex flex-col justify-center gap-4 md:gap-6 ">
+
+        <div className=" ">
           <h1 className="text-2xl md:text-3xl  text-white leading-snug">
             Promotional landing page for our favorite show
           </h1>
@@ -51,10 +53,10 @@ function BodyTwo() {
               <span>Role</span>
               <span>Frontend Developer</span>
             </div>
-          </div>
+        </div>
 
           {/* Links */}
-          <div className="flex flex-col sm:flex-row gap-4 text-[#D3E97A] text-sm md:text-base">
+          <div className="flex flex-col md:flex-row gap-4 text-[#D3E97A] text-sm md:text-base">
             <a href="#" className="flex items-center gap-2 border-b border-[#D3E97A] pb-1 hover:opacity-80 transition">
               LIVE DEMO
             </a>
@@ -64,7 +66,7 @@ function BodyTwo() {
             </a>
           </div>
         </div>
-
+        </div> 
 
 
 
